@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!-- Google Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+   <!-- Credits: 
+CSS: https://www.w3schools.com/howto/howto_css_three_columns.asp -->
+<!-- Eomji: https://getemoji.com/  -->
+  <!-- CSS -->
+<style>
+    /* 3 columns layout for selling items */
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* 2 columns layout for embedding map and video */
+.column-b {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row-b:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.center-text {
+    text-align: center;
+        }
+    
+.center-img {
+     display: block;
+     margin: auto;
+} 
+
+</style>
+  <body>
+    <head>
+        <img class="center-img" src="assets/images/rmit-store-logo.png" alt="rmit-store-logo" />
+        <br>
+        <link rel="icon" type="image/png" href="assets\images\rmit-favicon.png"/>
+    </head>
+    <nav class="center-text">
+      <a href=""><b>Clothing</b></a> 
+      <a href=""><b>Acessories</b></a>
+      <a href=""><b>Stationary</b></a>
+      <a href=""><b>Courses</b></a>
+      <a href=""><b>Special Collections</b></a>
+      <a href=""><b>Sales</b></a>
+      <a href=""><b>Buy Now</b></a>
+    </nav>
+    <br>
+
+    <div>
+      <!-- big outter div -->
+      
+    
+      <div>
+        <!-- inner div1 -->
+        <img src="assets/images/slider.jpg" alt="slider" />
+        <h3 class="center-text">Our Store  🛒 </h3>
+      
+        <!-- inner div 2 -->
+        <div>
+             <!-- there are 9 images (3x3) -->
+             <div class="row">
+                 <!-- div row1 3 items -->
+                <div class="column">            
+                    <img src="assets\images\p-1.jpg" alt="Fairtrade Pocket Hoodie" />
+                    <a href="">Fairtrade Pocket Hoodie</a>
+                    <p><b>64.95 AUD</b></p>
+                </div>
+                <div class="column">            
+                    <img src="assets\images\p-2.jpg" alt="Fairtrade Zip Hoodie" />
+                    <a href="">Fairtrade Zip Hoodie</a>
+                    <p><b>59.95 AUD</b></p>
+                </div>
+                <div class="column">            
+                    <img src="assets\images\p-3.jpg" alt="Ruby Jergy" />
+                    <a href="">Ruby Jergy</a>
+                    <p><b>69.95 AUD</b></p>
+                </div>
+             </div>
+        
+             <div class="row">
+                <!-- div row2 3 items -->
+               <div class="column">            
+                   <img src="assets\images\p-4.jpg" alt="Topaz Premium Zip Jacket" />
+                   <a href="">Topaz Premium Zip Jacket</a>
+                   <p><b>34.95 AUD</b></p>
+               </div>
+               <div class="column">            
+                   <img src="assets\images\p-5.jpg" alt="Rmit Fairtrade Polo" />
+                   <a href="">Rmit Fairtrade Polo</a>
+                   <p><b>21.95 AUD</b></p>
+               </div>
+               <div class="column">            
+                   <img src="assets\images\p-6.jpg" alt="Portable Charger" />
+                   <a href="">Portable Charger</a>
+                   <b>
+                       <p>10 AUD</p>
+                   </b>
+               </div>
+            </div>
+
+
+            <div class="row">
+                <!-- div row3 3 items -->
+               <div class="column">            
+                   <img src="assets\images\p-7.jpg" alt="Face Mask" />
+                   <a class = "center-text" href="">Face Mask</a>
+                   <p><b>8.5 AUD</b></p>
+               </div>
+               <div class="column">            
+                   <img src="assets\images\p-8.jpg" alt="Hoddie Koala" />
+                   <a class = "center-text" href="">Hoddie Koala</a>
+                   <b>
+                       <p>30 AUD</p>
+                   </b>
+               </div>
+               <div class="column">            
+                   <img src="assets\images\p-9.jpg" alt="Graduation Redbacks Pack" />
+                   <a href="">Graduation Redbacks Pack</a>
+                   <p><b>59.95 AUD</b></p>
+               </div>
+            </div>
+        
+            <div class="row-b">
+                <!-- inner div3 -->
+                <div class="column-b">
+                    <!-- div for video -->
+                    <h3 class="center-text">Our Campus Video 🎥 </h3> 
+                    <iframe width="560" height="450" src="https://www.youtube.com/embed/N7UTS7en9uY?si=K0tCpChGBlp5kule" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+     
+                </div>
+                <div></div>
+
+                <div class="column-b">
+                    <!-- div for map -->
+                    <h3 class="center-text">Our Location 🗺️</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62715.43741109472!2d106.6538064247917!3d10.756446583968373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fbea5fe3db1%3A0xfae94aca5709003f!2sRMIT%20University%20Vietnam%20-%20Saigon%20South%20campus!5e0!3m2!1sen!2s!4v1697530934765!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>     
+            </div>
+            
+            <br>
+            <p class="center-text"><b>@ Copyright 2023 by Duong Tran @ RMIT Vietnam | Made with ❤️</b></p>
+ 
+    </div>
+  </body>
+</html>
