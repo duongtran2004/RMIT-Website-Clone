@@ -1,0 +1,132 @@
+
+      <!-- Credits: 
+CSS: https://www.w3schools.com/howto/howto_css_three_columns.asp -->
+<!-- Eomji: https://getemoji.com/  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RMIT Store</title>
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+
+  <body>
+    <header>
+        <a  href="index.html"><img class="center-img" src="assets/images/rmit-store-logo.png" alt="rmit-store-logo" /></a>
+
+        <br>
+        <link rel="icon" type="image/png" href="assets\images\rmit-favicon.png"/>
+    </header>
+    <nav class="center-text">
+        <a href="index.html"><b>Hompage</b></a> 
+      <a href=""><b>Clothing</b></a> 
+      <a href=""><b>Acessories</b></a>
+      <a href=""><b>Stationary</b></a>
+      <a href=""><b>Courses</b></a>
+      <a href=""><b>Special Collections</b></a>
+      <a href=""><b>Sales</b></a>
+      <a href=""><b>Buy Now</b></a>
+    </nav>
+    <br>
+  <body>
+    <img id="slider-image" src="assets/images/slider.jpg" alt="slider" />
+
+      <!-- Form -->
+      <!-- missing 
+    1. Form border
+    2. Date format: dd/mm/yy (slash + number month, not letter month)
+    3. Form name at the top left border 
+    4. Default fill
+    5. What is the purpose of id and name in HTML forms? 
+    6. (Javascript later on): 
+    a. Disctrict goes accordingly to its city (Ex: Hanoi cannot have district 1)
+    b. How to lock the choices of district and only allow user to choose districts once they have chosen their city (avoid invalid shipping addresses)
+    7. How to adjust the border of the form to be middle? 
+    
+
+-->
+<h3 class="center-text">Order Product Form</h1>
+      <!-- personal information -->
+      <fieldset> 
+        <legend>Enter your personal information</legend>
+      <form class="center-text" action="" method="get"> <br>
+        <label for="firstname"> First Name:</label>
+        <input type="text" name="firstname" value="Tom" /> <br /><br/>
+        <label for="lastname"> Last Name:</label>
+        <input type="text" name="lastname" value="Huynh" /> <br /><br/>
+        <label for="DOB"> Date of Birth:</label>
+        <input type="date" name="DOB" value="2002-12-26" /> <br /> <br>
+
+      </form>
+    </fieldset> <br> <br>
+      <!-- shipping information -->
+      <fieldset>
+        <legend>Enter your shipping information</legend>
+   
+
+      <form class="center-text form" action="" method="get"> <br>
+        <label for="address"> Address:</label>
+        <input type="text" name="address" value="123 Hai Ba Trung Street" /> <br /><br />
+        <!-- Logic: User must choose city first, then district later -->
+        <label for="city"> City:</label>
+        <select name="city" id="city">
+        <option value="HCM">Ho Chi Minh City</option>
+        <option value="HN">Hanoi</option></select> <br> <br>
+       
+       
+        <label for="district"> District:</label>
+      <select name="district" id="district">
+        <!-- Saigon's district -->
+<option value="District 1">District 1</option>
+<option value="District 2">District 2</option>
+<option value="District 3">District 3</option>
+        <!-- Hanoi's district -->
+<option value="Dong Da">Dong Da</option>
+<option value="Cau Giay">Cau Giay</option>
+<option value="Ba Dinh">Ba Dinh</option>
+
+      </select> <br><br>
+      <label for="postcode"> Postcode:</label> 
+      <input type="number" name="postcode" value="70000" /> <br />
+      <br />
+     
+      </form>
+      </fieldset> <br><br>
+
+
+      <!-- purchase option  -->
+      <fieldset>
+        <legend>Purchase Options</legend>
+      <form class="center-text form" action="" method="get"> 
+        <label for="product">Select product(s)</label>
+        <select name="product" id="product" multiple>
+          <option value="Fairtrade Pocket Hoodie">Fairtrade Pocket Hoodie</option>
+          <option value="Fairtrade Zip Hoodie">Fairtrade Zip Hoodie</option>
+          <option value="Ruby Jergy">Ruby Jergy</option>
+          <option value="Topaz Premium Zip Jacket">Topaz Premium Zip Jacket</option>
+          <option value="Rmit Fairtrade Polo">Rmit Fairtrade Polo</option>
+          <option value="Portable Charger">Portable Charger</option>
+          <option value="Face Mask">Face Mask</option>
+          <option value="Hoddie Koala">Hoddie Koala</option>
+          <option value="Graduation Redbacks Pack">Graduation Redbacks Pack</option>
+
+</select><br> <br> 
+         <p><b>Hint</b> Use Shift/Ctrl key to select multiple products!</p>
+      
+      </form>
+      </fieldset> <br><br>
+
+      <!-- submit button -->
+    
+      <input class="center-img" type="submit" value="Order Now" />
+      <footer>        <p class="center-text"><b>@ Copyright 2023 by Duong Tran @ RMIT Vietnam | Made with ❤️</b></p></footer>
+      <br /><br />
+    </body>
+  </head>
+</html>

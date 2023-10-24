@@ -1,0 +1,67 @@
+/* <!-- Credits: 
+CSS: https://www.w3schools.com/howto/howto_css_three_columns.asp -->
+<!-- Eomji: https://getemoji.com/  --> */
+
+/* 3 columns layout for selling items */
+.column {
+  float: left;
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Use flexbox to adjust product row */
+div.row3 {
+  background-color: blue;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* 2 columns layout for embedding map and video */
+.column-b {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns (map and video)*/
+.row-b:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.center-text {
+  text-align: center;
+}
+
+.center-img {
+  display: block;
+  margin: auto;
+}
+#slider-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.main-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.emoji {
+  margin: auto;
+}
+/* At first I wanna use CSS-border to border-around the form. But then I found HTML <fieldset and legend to be more useful */
+/* .form {
+  border: black;
+  border-width: 1px;
+  border-style: solid;
+} */
